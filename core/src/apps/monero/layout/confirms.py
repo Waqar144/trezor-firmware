@@ -100,7 +100,7 @@ async def _require_confirm_output(ctx, dst, network_type, payment_id):
         ui.GREEN,
         4,
     ):
-        raise wire.ActionCancelled("Cancelled")
+        raise wire.ActionCancelled
 
 
 async def _require_confirm_payment_id(ctx, payment_id):
@@ -111,7 +111,7 @@ async def _require_confirm_payment_id(ctx, payment_id):
         ui.ICON_SEND,
         ui.GREEN,
     ):
-        raise wire.ActionCancelled("Cancelled")
+        raise wire.ActionCancelled
 
 
 async def _require_confirm_fee(ctx, fee):
