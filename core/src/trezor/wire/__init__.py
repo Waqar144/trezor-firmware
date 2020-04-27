@@ -120,6 +120,7 @@ if False:
         async def write(self, msg: protobuf.MessageType) -> None:
             ...
 
+        # XXX modify type signature so that the return value must be of the same type?
         async def wait(self, *tasks: Awaitable) -> Any:
             ...
 
